@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E041027D15FFFD2C008B9B01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E041027C15FFFD2C008B9B01 /* UIKit.framework */; };
+		E041027F15FFFD2C008B9B01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E041027E15FFFD2C008B9B01 /* Foundation.framework */; };
+		E041028115FFFD2C008B9B01 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E041028015FFFD2C008B9B01 /* CoreGraphics.framework */; };
+		E041028715FFFD2C008B9B01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E041028515FFFD2C008B9B01 /* InfoPlist.strings */; };
+		E041028915FFFD2C008B9B01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E041028815FFFD2C008B9B01 /* main.m */; };
+		E041028D15FFFD2C008B9B01 /* KidsIQ_iPhoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E041028C15FFFD2C008B9B01 /* KidsIQ_iPhoneAppDelegate.m */; };
+		E041029015FFFD2C008B9B01 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E041028E15FFFD2C008B9B01 /* MainStoryboard.storyboard */; };
+		E041029315FFFD2C008B9B01 /* KidsIQ_iPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E041029215FFFD2C008B9B01 /* KidsIQ_iPhoneViewController.m */; };
+		E041029B15FFFD2D008B9B01 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E041029A15FFFD2D008B9B01 /* SenTestingKit.framework */; };
+		E041029C15FFFD2D008B9B01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E041027C15FFFD2C008B9B01 /* UIKit.framework */; };
+		E041029D15FFFD2D008B9B01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E041027E15FFFD2C008B9B01 /* Foundation.framework */; };
+		E04102A515FFFD2D008B9B01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E04102A315FFFD2D008B9B01 /* InfoPlist.strings */; };
+		E04102A815FFFD2D008B9B01 /* KidsIQ_iPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E04102A715FFFD2D008B9B01 /* KidsIQ_iPhoneTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E041029E15FFFD2D008B9B01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E041026F15FFFD2C008B9B01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E041027715FFFD2C008B9B01;
+			remoteInfo = KidsIQ_iPhone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E041027815FFFD2C008B9B01 /* KidsIQ_iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KidsIQ_iPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E041027C15FFFD2C008B9B01 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E041027E15FFFD2C008B9B01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E041028015FFFD2C008B9B01 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E041028415FFFD2C008B9B01 /* KidsIQ_iPhone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KidsIQ_iPhone-Info.plist"; sourceTree = "<group>"; };
+		E041028615FFFD2C008B9B01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E041028815FFFD2C008B9B01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E041028A15FFFD2C008B9B01 /* KidsIQ_iPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KidsIQ_iPhone-Prefix.pch"; sourceTree = "<group>"; };
+		E041028B15FFFD2C008B9B01 /* KidsIQ_iPhoneAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KidsIQ_iPhoneAppDelegate.h; sourceTree = "<group>"; };
+		E041028C15FFFD2C008B9B01 /* KidsIQ_iPhoneAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KidsIQ_iPhoneAppDelegate.m; sourceTree = "<group>"; };
+		E041028F15FFFD2C008B9B01 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E041029115FFFD2C008B9B01 /* KidsIQ_iPhoneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KidsIQ_iPhoneViewController.h; sourceTree = "<group>"; };
+		E041029215FFFD2C008B9B01 /* KidsIQ_iPhoneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KidsIQ_iPhoneViewController.m; sourceTree = "<group>"; };
+		E041029915FFFD2D008B9B01 /* KidsIQ_iPhoneTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KidsIQ_iPhoneTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E041029A15FFFD2D008B9B01 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E04102A215FFFD2D008B9B01 /* KidsIQ_iPhoneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KidsIQ_iPhoneTests-Info.plist"; sourceTree = "<group>"; };
+		E04102A415FFFD2D008B9B01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E04102A615FFFD2D008B9B01 /* KidsIQ_iPhoneTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KidsIQ_iPhoneTests.h; sourceTree = "<group>"; };
+		E04102A715FFFD2D008B9B01 /* KidsIQ_iPhoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KidsIQ_iPhoneTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E041027515FFFD2C008B9B01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E041027D15FFFD2C008B9B01 /* UIKit.framework in Frameworks */,
+				E041027F15FFFD2C008B9B01 /* Foundation.framework in Frameworks */,
+				E041028115FFFD2C008B9B01 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E041029515FFFD2D008B9B01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E041029B15FFFD2D008B9B01 /* SenTestingKit.framework in Frameworks */,
+				E041029C15FFFD2D008B9B01 /* UIKit.framework in Frameworks */,
+				E041029D15FFFD2D008B9B01 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E041026D15FFFD2C008B9B01 = {
+			isa = PBXGroup;
+			children = (
+				E041028215FFFD2C008B9B01 /* KidsIQ_iPhone */,
+				E04102A015FFFD2D008B9B01 /* KidsIQ_iPhoneTests */,
+				E041027B15FFFD2C008B9B01 /* Frameworks */,
+				E041027915FFFD2C008B9B01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E041027915FFFD2C008B9B01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E041027815FFFD2C008B9B01 /* KidsIQ_iPhone.app */,
+				E041029915FFFD2D008B9B01 /* KidsIQ_iPhoneTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E041027B15FFFD2C008B9B01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E041027C15FFFD2C008B9B01 /* UIKit.framework */,
+				E041027E15FFFD2C008B9B01 /* Foundation.framework */,
+				E041028015FFFD2C008B9B01 /* CoreGraphics.framework */,
+				E041029A15FFFD2D008B9B01 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E041028215FFFD2C008B9B01 /* KidsIQ_iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				E041028B15FFFD2C008B9B01 /* KidsIQ_iPhoneAppDelegate.h */,
+				E041028C15FFFD2C008B9B01 /* KidsIQ_iPhoneAppDelegate.m */,
+				E041028E15FFFD2C008B9B01 /* MainStoryboard.storyboard */,
+				E041029115FFFD2C008B9B01 /* KidsIQ_iPhoneViewController.h */,
+				E041029215FFFD2C008B9B01 /* KidsIQ_iPhoneViewController.m */,
+				E041028315FFFD2C008B9B01 /* Supporting Files */,
+			);
+			path = KidsIQ_iPhone;
+			sourceTree = "<group>";
+		};
+		E041028315FFFD2C008B9B01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E041028415FFFD2C008B9B01 /* KidsIQ_iPhone-Info.plist */,
+				E041028515FFFD2C008B9B01 /* InfoPlist.strings */,
+				E041028815FFFD2C008B9B01 /* main.m */,
+				E041028A15FFFD2C008B9B01 /* KidsIQ_iPhone-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E04102A015FFFD2D008B9B01 /* KidsIQ_iPhoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				E04102A615FFFD2D008B9B01 /* KidsIQ_iPhoneTests.h */,
+				E04102A715FFFD2D008B9B01 /* KidsIQ_iPhoneTests.m */,
+				E04102A115FFFD2D008B9B01 /* Supporting Files */,
+			);
+			path = KidsIQ_iPhoneTests;
+			sourceTree = "<group>";
+		};
+		E04102A115FFFD2D008B9B01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E04102A215FFFD2D008B9B01 /* KidsIQ_iPhoneTests-Info.plist */,
+				E04102A315FFFD2D008B9B01 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E041027715FFFD2C008B9B01 /* KidsIQ_iPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E04102AB15FFFD2D008B9B01 /* Build configuration list for PBXNativeTarget "KidsIQ_iPhone" */;
+			buildPhases = (
+				E041027415FFFD2C008B9B01 /* Sources */,
+				E041027515FFFD2C008B9B01 /* Frameworks */,
+				E041027615FFFD2C008B9B01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KidsIQ_iPhone;
+			productName = KidsIQ_iPhone;
+			productReference = E041027815FFFD2C008B9B01 /* KidsIQ_iPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E041029815FFFD2D008B9B01 /* KidsIQ_iPhoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E04102AE15FFFD2D008B9B01 /* Build configuration list for PBXNativeTarget "KidsIQ_iPhoneTests" */;
+			buildPhases = (
+				E041029415FFFD2D008B9B01 /* Sources */,
+				E041029515FFFD2D008B9B01 /* Frameworks */,
+				E041029615FFFD2D008B9B01 /* Resources */,
+				E041029715FFFD2D008B9B01 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E041029F15FFFD2D008B9B01 /* PBXTargetDependency */,
+			);
+			name = KidsIQ_iPhoneTests;
+			productName = KidsIQ_iPhoneTests;
+			productReference = E041029915FFFD2D008B9B01 /* KidsIQ_iPhoneTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E041026F15FFFD2C008B9B01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KidsIQ_iPhone;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Chan Komagan";
+			};
+			buildConfigurationList = E041027215FFFD2C008B9B01 /* Build configuration list for PBXProject "KidsIQ_iPhone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E041026D15FFFD2C008B9B01;
+			productRefGroup = E041027915FFFD2C008B9B01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E041027715FFFD2C008B9B01 /* KidsIQ_iPhone */,
+				E041029815FFFD2D008B9B01 /* KidsIQ_iPhoneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E041027615FFFD2C008B9B01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E041028715FFFD2C008B9B01 /* InfoPlist.strings in Resources */,
+				E041029015FFFD2C008B9B01 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E041029615FFFD2D008B9B01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E04102A515FFFD2D008B9B01 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E041029715FFFD2D008B9B01 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E041027415FFFD2C008B9B01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E041028915FFFD2C008B9B01 /* main.m in Sources */,
+				E041028D15FFFD2C008B9B01 /* KidsIQ_iPhoneAppDelegate.m in Sources */,
+				E041029315FFFD2C008B9B01 /* KidsIQ_iPhoneViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E041029415FFFD2D008B9B01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E04102A815FFFD2D008B9B01 /* KidsIQ_iPhoneTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E041029F15FFFD2D008B9B01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E041027715FFFD2C008B9B01 /* KidsIQ_iPhone */;
+			targetProxy = E041029E15FFFD2D008B9B01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E041028515FFFD2C008B9B01 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E041028615FFFD2C008B9B01 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E041028E15FFFD2C008B9B01 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E041028F15FFFD2C008B9B01 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		E04102A315FFFD2D008B9B01 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E04102A415FFFD2D008B9B01 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E04102A915FFFD2D008B9B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E04102AA15FFFD2D008B9B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E04102AC15FFFD2D008B9B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KidsIQ_iPhone/KidsIQ_iPhone-Prefix.pch";
+				INFOPLIST_FILE = "KidsIQ_iPhone/KidsIQ_iPhone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E04102AD15FFFD2D008B9B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KidsIQ_iPhone/KidsIQ_iPhone-Prefix.pch";
+				INFOPLIST_FILE = "KidsIQ_iPhone/KidsIQ_iPhone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E04102AF15FFFD2D008B9B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KidsIQ_iPhone.app/KidsIQ_iPhone";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KidsIQ_iPhone/KidsIQ_iPhone-Prefix.pch";
+				INFOPLIST_FILE = "KidsIQ_iPhoneTests/KidsIQ_iPhoneTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E04102B015FFFD2D008B9B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KidsIQ_iPhone.app/KidsIQ_iPhone";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KidsIQ_iPhone/KidsIQ_iPhone-Prefix.pch";
+				INFOPLIST_FILE = "KidsIQ_iPhoneTests/KidsIQ_iPhoneTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E041027215FFFD2C008B9B01 /* Build configuration list for PBXProject "KidsIQ_iPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E04102A915FFFD2D008B9B01 /* Debug */,
+				E04102AA15FFFD2D008B9B01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E04102AB15FFFD2D008B9B01 /* Build configuration list for PBXNativeTarget "KidsIQ_iPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E04102AC15FFFD2D008B9B01 /* Debug */,
+				E04102AD15FFFD2D008B9B01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E04102AE15FFFD2D008B9B01 /* Build configuration list for PBXNativeTarget "KidsIQ_iPhoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E04102AF15FFFD2D008B9B01 /* Debug */,
+				E04102B015FFFD2D008B9B01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E041026F15FFFD2C008B9B01 /* Project object */;
+}

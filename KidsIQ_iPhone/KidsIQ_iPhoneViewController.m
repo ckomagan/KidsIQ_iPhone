@@ -47,7 +47,8 @@ int counter;
 int hours, minutes, seconds;
 int secondsLeft;
 int noOfSecs;
-
+UIColor *greenColor;
+UIColor *redColor;
 @synthesize name;
 @synthesize level;
 @synthesize maxQuestions;
@@ -135,8 +136,6 @@ int noOfSecs;
                                                selector:@selector(advanceTimer:)
                                                userInfo:nil
                                                 repeats:YES];
-    
-
     while(_id < 0)
     {
         _id = [self generateRandomNumber];
@@ -202,6 +201,7 @@ int noOfSecs;
         if ([rightChoice isEqualToString:@"1"]) {
             _correctChoice = answer;
         }
+        if([question.text isEqualToString:@""]) [self disableAllChoices];
     }
     
     if ([res count] ==0)
@@ -235,10 +235,11 @@ int noOfSecs;
 
 - (void)resetAll /* restart the quiz */
 {
-    _id = 1;
+    _id = -1;
     _score = 0;
     reset = YES;  //reset the first set of questions
     _noOfQuestions = 1;
+    greenColor = [UIColor colorWithRed:60.0f/255.0f green:179.0f/255.0f blue:113.0f/255.0f alpha:1.0f];
     [self setCounter];
     [mainTimer invalidate];
     [self viewDidLoad];
@@ -264,17 +265,17 @@ int noOfSecs;
     {
         if ([_selectedChoice isEqualToString:_correctChoice]) {
             result.text = @"Correct Answer!";
-            [result setTextColor:[UIColor greenColor]];
-			[self highlightChoice];
+            [result setTextColor:greenColor];
+			[self highlightCorrect];
             _score++;
         }
         else {
 			NSString *preText = @"Incorrect! The correct answer is ";
             result.text = [preText stringByAppendingString:[NSString stringWithFormat:@"%@",_correctChoice]];
             [result setTextColor:[UIColor redColor]];
+            [self highlightWrong];
         }
         _noOfQuestions++;
-        //_id++;
         _id = [self generateRandomNumber];
         [submit setTitle:@"Next" forState:(UIControlState)UIControlStateNormal];
 		[submit setBackgroundColor:[UIColor purpleColor]];
@@ -343,30 +344,57 @@ int noOfSecs;
     finalScoreText = [finalScoreText stringByAppendingString: @"%"];
 }
 
--(void)highlightChoice
+-(void)highlightCorrect
 {
 	if([btnPressed isEqual:@"choicea"])
 	{
-		[choicea setBackgroundColor:[UIColor greenColor]];
-		[answerA setTextColor:[UIColor greenColor]];
+		[choicea setBackgroundColor:greenColor];
+		[answerA setTextColor:greenColor];
 	}
 	
 	if([btnPressed isEqual:@"choiceb"])
 	{
-		[choiceb setBackgroundColor:[UIColor greenColor]];
-		[answerB setTextColor:[UIColor greenColor]];
+		[choiceb setBackgroundColor:greenColor];
+		[answerB setTextColor:greenColor];
 	}
     
 	if([btnPressed isEqual:@"choicec"])
 	{
-		[choicec setBackgroundColor:[UIColor greenColor]];
-		[answerC setTextColor:[UIColor greenColor]];
+		[choicec setBackgroundColor:greenColor];
+		[answerC setTextColor:greenColor];
 	}
     
 	if([btnPressed isEqualToString:@"choiced"])
 	{
-		[choiced setBackgroundColor:[UIColor greenColor]];
-		[answerD setTextColor:[UIColor greenColor]];
+		[choiced setBackgroundColor:greenColor];
+		[answerD setTextColor:greenColor];
+	}
+}
+
+-(void)highlightWrong
+{
+	if([btnPressed isEqual:@"choicea"])
+	{
+		[choicea setBackgroundColor:[UIColor redColor]];
+		[answerA setTextColor:[UIColor redColor]];
+	}
+	
+	if([btnPressed isEqual:@"choiceb"])
+	{
+		[choiceb setBackgroundColor:[UIColor redColor]];
+		[answerB setTextColor:[UIColor redColor]];
+	}
+	
+	if([btnPressed isEqual:@"choicec"])
+	{
+		[choicec setBackgroundColor:[UIColor redColor]];
+		[answerC setTextColor:[UIColor redColor]];
+	}
+	
+	if([btnPressed isEqualToString:@"choiced"])
+	{
+		[choiced setBackgroundColor:[UIColor redColor]];
+		[answerD setTextColor:[UIColor redColor]];
 	}
 }
 
@@ -386,8 +414,8 @@ int noOfSecs;
 -(int)generateRandomNumber
 {
     int randomNumber = -1;
-    randomNumber = (arc4random() % 65)+1;
-    //NSLog(@"numberWithSet : %@ \n\n",usedNumbers);
+    randomNumber = (arc4random() % 70) + 1;
+    NSLog(@"numberWithSet : %@ \n\n",usedNumbers);
     bool myIndex = [usedNumbers containsObject:[NSNumber numberWithInt: randomNumber]];
     if (myIndex == false)
     {

@@ -34,6 +34,7 @@
 @property (nonatomic, retain) UILabel *myCounterLabel;
 @property int maxQuestions;
 @property (assign) int level;
+@property (nonatomic, retain) NSTimer *mainTimer;
 
 -(IBAction)showModalViewController;
 

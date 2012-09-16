@@ -9,6 +9,7 @@
 #import "QuitController.h"
 #import "NameViewController.h"
 
+
 @interface QuitController()
 @end;
 
@@ -45,9 +46,8 @@
 }
 
 -(IBAction)loginScreen {
-    
+    [self.mainTimer invalidate];
     UIViewController *vc = [[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil]  instantiateViewControllerWithIdentifier:@"NameViewController"];
-    
     [self presentModalViewController:vc animated:false];
 }
 

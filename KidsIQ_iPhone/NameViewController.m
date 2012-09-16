@@ -97,8 +97,8 @@ int noOfQuestions = 0;
             errorStatus.text = @"Please enter the name.";
             return;
         }
-        
-        quizView.name = nameText.text;  
+        [quizView.mainTimer invalidate];
+        quizView.name = nameText.text;
         quizView.maxQuestions = noOfQuestions;
         quizView.level = challengeLevel; //1 is basic
         [quizView resetAll];

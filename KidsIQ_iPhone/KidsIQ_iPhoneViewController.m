@@ -32,6 +32,7 @@
 @synthesize selectedChoice = _selectedChoice;
 @synthesize correctChoice = _correctChoice;
 @synthesize usedNumbers;
+@synthesize mainTimer;
 NSInteger _id = -1;
 NSInteger _score = 0;
 NSInteger _noOfQuestions = 1;
@@ -59,11 +60,8 @@ int noOfSecs;
 
 -(IBAction)showModalViewController {
     QuitController *tempView = [[QuitController alloc] initWithNibName:@"QuitController" bundle:nil];
+    tempView.mainTimer = mainTimer;
     [self presentModalViewController:tempView animated:true];
-}
-
-- (IBAction)submit:(id)sender {
-    
 }
 
 - (void)showbutton {
@@ -129,11 +127,15 @@ int noOfSecs;
 {
     [super viewDidLoad];
     hours = minutes = seconds = 0;
-    NSTimer *mainTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f
-                                                          target:self
-                                                        selector:@selector(advanceTimer:)
-                                                        userInfo:nil 
-                                                         repeats:YES];
+    if ( [mainTimer isValid]){
+        [mainTimer invalidate], mainTimer=nil;
+    }
+    mainTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f
+                                                 target:self
+                                               selector:@selector(advanceTimer:)
+                                               userInfo:nil
+                                                repeats:YES];
+    
 
     while(_id < 0)
     {
@@ -238,6 +240,7 @@ int noOfSecs;
     reset = YES;  //reset the first set of questions
     _noOfQuestions = 1;
     [self setCounter];
+    [mainTimer invalidate];
     [self viewDidLoad];
 }
 
@@ -286,6 +289,7 @@ int noOfSecs;
         [self resetAllChoices];
         [self enableAllChoices];
         [self trackScore];
+        [mainTimer invalidate];
         [self viewDidLoad];
     }
 
@@ -298,13 +302,14 @@ int noOfSecs;
     [self resetAllChoices];
     [self trackScore];
 	result.text =@"";
+    [mainTimer invalidate];
     [self viewDidLoad];
 }
 
 - (void)trackScore
 {
     scoreText = [NSString stringWithFormat:@"%d",_score];
-    scoreText = [scoreText stringByAppendingString:@ " / "];
+    scoreText = [scoreText stringByAppendingString:@ "/"];
     scoreText = [scoreText stringByAppendingString:[NSString stringWithFormat:@"%d",maxQuestions]];
     [score setText: scoreText];
 }
@@ -374,6 +379,7 @@ int noOfSecs;
 	resultView.maxQuestions = maxQuestions;
 	[self resetAll];
     resultView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [mainTimer invalidate];
     [self presentModalViewController:resultView animated:true];
 }
 
@@ -401,15 +407,14 @@ int noOfSecs;
     if(level == 1) noOfSecs = 10; //basic
     if(level == 2) noOfSecs = 7; //intermediate
     if(level == 3) noOfSecs = 5; //advanced
-    counter = maxQuestions*noOfSecs;
+    counter = (maxQuestions*noOfSecs)+1;
     NSLog(@"total secs = %d", counter);
 }
 
 - (void)advanceTimer:(NSTimer *)timer
 {
     counter--;
-    //[self.myCounterLabel setText:[NSString stringWithFormat:@"%d",counter]];
-    if (counter <= 0) { [timer invalidate]; }
+    if (counter <= 0) { [timer invalidate]; [self showResults];}
     
     if(counter > 0 ){
         minutes = (counter % 3600) / 60;
@@ -423,6 +428,7 @@ int noOfSecs;
 
 - (void)viewDidUnload
 {
+    [mainTimer invalidate];
     [super viewDidUnload];
 }
 
@@ -457,6 +463,7 @@ int noOfSecs;
 }
 
 -(IBAction)dismissView {
+    [mainTimer invalidate];
     [self dismissModalViewControllerAnimated:YES];
 }
 

@@ -83,12 +83,6 @@ int noOfQuestions = 0;
     [self dismissModalViewControllerAnimated:YES];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-	return YES;
-}
-
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"showQuiz"]) {
@@ -199,10 +193,16 @@ int noOfQuestions = 0;
     
 }
 
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation
+{
+    return (orientation != UIDeviceOrientationLandscapeLeft) &&
+	(orientation != UIDeviceOrientationLandscapeRight);
+}
+
 - (void)willAnimateRotationToInterfaceOrientation: (UIInterfaceOrientation)toInterfaceOrientation
                                          duration:(NSTimeInterval)duration
 {
-    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+    /*if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
         toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)
     {
         titleLabel.center = CGPointMake(230,20);
@@ -220,7 +220,7 @@ int noOfQuestions = 0;
         choicesLabel.center = CGPointMake(156, 200);
         self.levelPickerView.center = CGPointMake(160,250);
         nameOK.center = CGPointMake(154,328);
-    }
+    }*/
 }
 
 

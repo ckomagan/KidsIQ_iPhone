@@ -20,6 +20,13 @@
 		E041029D15FFFD2D008B9B01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E041027E15FFFD2C008B9B01 /* Foundation.framework */; };
 		E04102A515FFFD2D008B9B01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E04102A315FFFD2D008B9B01 /* InfoPlist.strings */; };
 		E04102A815FFFD2D008B9B01 /* KidsIQ_iPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E04102A715FFFD2D008B9B01 /* KidsIQ_iPhoneTests.m */; };
+		E04102BD15FFFE1C008B9B01 /* NameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E04102B615FFFE1C008B9B01 /* NameViewController.m */; };
+		E04102BE15FFFE1C008B9B01 /* QuitController.m in Sources */ = {isa = PBXBuildFile; fileRef = E04102B815FFFE1C008B9B01 /* QuitController.m */; };
+		E04102BF15FFFE1C008B9B01 /* QuitController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E04102B915FFFE1C008B9B01 /* QuitController.xib */; };
+		E04102C015FFFE1C008B9B01 /* ResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = E04102BB15FFFE1C008B9B01 /* ResultController.m */; };
+		E04102C115FFFE1C008B9B01 /* ResultController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E04102BC15FFFE1C008B9B01 /* ResultController.xib */; };
+		E04102D7160039B4008B9B01 /* kidsiq_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = E04102D6160039B4008B9B01 /* kidsiq_57x57.png */; };
+		E04102D91601657C008B9B01 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04102D81601657C008B9B01 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +59,16 @@
 		E04102A415FFFD2D008B9B01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E04102A615FFFD2D008B9B01 /* KidsIQ_iPhoneTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KidsIQ_iPhoneTests.h; sourceTree = "<group>"; };
 		E04102A715FFFD2D008B9B01 /* KidsIQ_iPhoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KidsIQ_iPhoneTests.m; sourceTree = "<group>"; };
+		E04102B515FFFE1C008B9B01 /* NameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameViewController.h; sourceTree = "<group>"; };
+		E04102B615FFFE1C008B9B01 /* NameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameViewController.m; sourceTree = "<group>"; };
+		E04102B715FFFE1C008B9B01 /* QuitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuitController.h; sourceTree = "<group>"; };
+		E04102B815FFFE1C008B9B01 /* QuitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuitController.m; sourceTree = "<group>"; };
+		E04102B915FFFE1C008B9B01 /* QuitController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuitController.xib; sourceTree = "<group>"; };
+		E04102BA15FFFE1C008B9B01 /* ResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultController.h; sourceTree = "<group>"; };
+		E04102BB15FFFE1C008B9B01 /* ResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultController.m; sourceTree = "<group>"; };
+		E04102BC15FFFE1C008B9B01 /* ResultController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultController.xib; sourceTree = "<group>"; };
+		E04102D6160039B4008B9B01 /* kidsiq_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kidsiq_57x57.png; sourceTree = "<group>"; };
+		E04102D81601657C008B9B01 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E04102D91601657C008B9B01 /* QuartzCore.framework in Frameworks */,
 				E041027D15FFFD2C008B9B01 /* UIKit.framework in Frameworks */,
 				E041027F15FFFD2C008B9B01 /* Foundation.framework in Frameworks */,
 				E041028115FFFD2C008B9B01 /* CoreGraphics.framework in Frameworks */,
@@ -81,6 +99,7 @@
 		E041026D15FFFD2C008B9B01 = {
 			isa = PBXGroup;
 			children = (
+				E04102D81601657C008B9B01 /* QuartzCore.framework */,
 				E041028215FFFD2C008B9B01 /* KidsIQ_iPhone */,
 				E04102A015FFFD2D008B9B01 /* KidsIQ_iPhoneTests */,
 				E041027B15FFFD2C008B9B01 /* Frameworks */,
@@ -111,11 +130,19 @@
 		E041028215FFFD2C008B9B01 /* KidsIQ_iPhone */ = {
 			isa = PBXGroup;
 			children = (
-				E041028B15FFFD2C008B9B01 /* KidsIQ_iPhoneAppDelegate.h */,
-				E041028C15FFFD2C008B9B01 /* KidsIQ_iPhoneAppDelegate.m */,
+				E04102B515FFFE1C008B9B01 /* NameViewController.h */,
+				E04102B615FFFE1C008B9B01 /* NameViewController.m */,
+				E04102B715FFFE1C008B9B01 /* QuitController.h */,
+				E04102B815FFFE1C008B9B01 /* QuitController.m */,
+				E04102B915FFFE1C008B9B01 /* QuitController.xib */,
+				E04102BA15FFFE1C008B9B01 /* ResultController.h */,
+				E04102BB15FFFE1C008B9B01 /* ResultController.m */,
+				E04102BC15FFFE1C008B9B01 /* ResultController.xib */,
 				E041028E15FFFD2C008B9B01 /* MainStoryboard.storyboard */,
 				E041029115FFFD2C008B9B01 /* KidsIQ_iPhoneViewController.h */,
 				E041029215FFFD2C008B9B01 /* KidsIQ_iPhoneViewController.m */,
+				E041028B15FFFD2C008B9B01 /* KidsIQ_iPhoneAppDelegate.h */,
+				E041028C15FFFD2C008B9B01 /* KidsIQ_iPhoneAppDelegate.m */,
 				E041028315FFFD2C008B9B01 /* Supporting Files */,
 			);
 			path = KidsIQ_iPhone;
@@ -124,6 +151,7 @@
 		E041028315FFFD2C008B9B01 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E04102D6160039B4008B9B01 /* kidsiq_57x57.png */,
 				E041028415FFFD2C008B9B01 /* KidsIQ_iPhone-Info.plist */,
 				E041028515FFFD2C008B9B01 /* InfoPlist.strings */,
 				E041028815FFFD2C008B9B01 /* main.m */,
@@ -225,6 +253,9 @@
 			files = (
 				E041028715FFFD2C008B9B01 /* InfoPlist.strings in Resources */,
 				E041029015FFFD2C008B9B01 /* MainStoryboard.storyboard in Resources */,
+				E04102BF15FFFE1C008B9B01 /* QuitController.xib in Resources */,
+				E04102C115FFFE1C008B9B01 /* ResultController.xib in Resources */,
+				E04102D7160039B4008B9B01 /* kidsiq_57x57.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +293,9 @@
 				E041028915FFFD2C008B9B01 /* main.m in Sources */,
 				E041028D15FFFD2C008B9B01 /* KidsIQ_iPhoneAppDelegate.m in Sources */,
 				E041029315FFFD2C008B9B01 /* KidsIQ_iPhoneViewController.m in Sources */,
+				E04102BD15FFFE1C008B9B01 /* NameViewController.m in Sources */,
+				E04102BE15FFFE1C008B9B01 /* QuitController.m in Sources */,
+				E04102C015FFFE1C008B9B01 /* ResultController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +353,8 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chan Komagan (LDU5U5LYT4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chan Komagan (LDU5U5LYT4)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -334,6 +369,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "8C85ECB9-7D55-4B49-9A85-ADC8BEC3638B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8C85ECB9-7D55-4B49-9A85-ADC8BEC3638B";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -346,7 +384,8 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chan Komagan (LDU5U5LYT4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chan Komagan (LDU5U5LYT4)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -354,7 +393,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "8C85ECB9-7D55-4B49-9A85-ADC8BEC3638B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8C85ECB9-7D55-4B49-9A85-ADC8BEC3638B";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -435,6 +477,7 @@
 				E04102AD15FFFD2D008B9B01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E04102AE15FFFD2D008B9B01 /* Build configuration list for PBXNativeTarget "KidsIQ_iPhoneTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +486,7 @@
 				E04102B015FFFD2D008B9B01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
